@@ -105,6 +105,15 @@ void loop() {
     rawY = -gx * sensitivitas;
   }
 
+  /*Jika sensor kebalik
+    if(miring()){
+    rawX = -gx * sensitivitas;
+    rawY = gz * sensitivitas;
+  }else{
+    rawX = -gy * sensitivitas;
+    rawY = gx * sensitivitas;
+  }*/
+
   xhalus = xhalus + kehalusanGerak * (rawX - xhalus);
   yhalus = yhalus + kehalusanGerak * (rawY- yhalus);
 
